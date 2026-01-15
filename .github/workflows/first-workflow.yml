@@ -1,0 +1,13 @@
+name: push-workflow
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log-my-name
+        run: echo "My name is Bisho"
+      - name: log-my-last-name
+        run: echo "My last name is Saeed"
