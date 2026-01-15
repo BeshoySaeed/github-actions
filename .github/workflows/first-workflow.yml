@@ -11,3 +11,10 @@ jobs:
         run: echo "My name is Bisho"
       - name: log-my-last-name
         run: echo "My last name is Saeed"
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log-my-city
+        run: echo "I live in Cairo"
+      - name: log-my-country
+        run: echo "My country is Egypt"
