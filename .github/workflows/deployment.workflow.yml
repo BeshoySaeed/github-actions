@@ -44,3 +44,13 @@ jobs:
         run: |
           echo "Deploying the application..."
           npm run build
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output Github context
+        run: |
+          echo "GIThub context ${{ toJson(github) }}"
+          echo "GITHUB REPOSITORY IS: ${{ github.repository }}"
+          echo "GITHUB ACTOR IS: ${{ github.actor }}"
+          echo "GITHUB REF IS: ${{ github.ref }}"
+          echo "GITHUB WORKFLOW IS: ${{ github.workflow }}"
