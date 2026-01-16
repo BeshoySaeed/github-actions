@@ -32,6 +32,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies..."
+          npm ci
       - name: build application
         run: |
           echo "Building the application..."
